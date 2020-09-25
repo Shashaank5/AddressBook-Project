@@ -13,6 +13,7 @@ public class AddressBook {
 
     public static void main(String[] args) {
         System.out.println("AddressBook");
+        // adding a random comment to test git
     }
 
     private void addBuddy(String name){
