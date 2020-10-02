@@ -19,15 +19,17 @@ public class AddressBook {
         buddies.add(new BuddyInfo("chicken eater", "613 1234", "N/A"));
 
          */
-        first.removeBuddy(new BuddyInfo("bobla", "613 737", "OttawaU"));
+        first.removeBuddy(0);
+        //testing github version control
 
         // adding a random comment to test git
     }
 
-    private void addBuddy(BuddyInfo buddy){
-        buddies.add(buddy);
+    private void addBuddy(BuddyInfo buddy) {
+        if (buddy!= null) buddies.add(buddy);
     }
-    private void removeBuddy(BuddyInfo buddy){
-        buddies.remove(buddy);
+    private void removeBuddy(int index){
+        if(index >= 0 && index < buddies.size())
+        buddies.remove(index);
     }
 }
