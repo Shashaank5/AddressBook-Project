@@ -33,4 +33,7 @@ public class AddressBook {
         if(index >= 0 && index < buddies.size())
         buddies.remove(index);
     }
+    private void stupidMethod(){
+        System.out.println("Hi");
+    }
 }
