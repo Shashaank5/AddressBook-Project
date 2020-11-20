@@ -17,9 +17,6 @@ public class BuddyInfo {
 		 BuddyInfo bob = new BuddyInfo("Homer", "613-112-1123", "Ottawa University");
 		 System.out.println("Hello Universe"); 
 	 }
-
-
-
 	public String getName() {
 		return name;
 	}
@@ -30,6 +27,11 @@ public class BuddyInfo {
 
 	public String getSchool() {
 		return school;
+	}
+
+	public String toString(){
+		return name + "#" + phone + "#" + school;
+		//“Mr. Buddy#111 Fake Street#613-555-5555”.
 	}
 	 
 	 
